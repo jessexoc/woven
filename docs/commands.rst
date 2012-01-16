@@ -92,7 +92,7 @@ The deploy command does the following:
 2. Create a virtualenv for the distribution version
 3. Install django. By default it will install the local version. You can set a pip requirements string DJANGO_REQUIREMENT in your settings.py if you want svn trunk or some other specific version.
 4. Install dependencies from one or more requirement req* files. eg. req, requirements.txt etc. If one doesn't exist then it will create one locally and add woven in it by default.
-5. Creates a local sitesettings folder and a settings file for your server settings.py if it doesn't already exist. You can see how woven lays out your project on the server in the sitesettings\settings.py file.
+5. Creates a local sitesettings folder and a settings file for your server settings.py if it doesn't already exist. You can see how woven lays out your project on the server in the sitesettings/settings.py file.
 6. Deploys your project to the virtualenv on the server
 7. Deploys your root (shortest path) TEMPLATE_DIR into a templates directory on the server.
 8. Deploys admin media or STATIC_ROOT setting (if you use django-staticfiles) into a virtualenv static directory.
@@ -110,7 +110,7 @@ The deploy command does the following:
 patch
 -----
 
-Patch the current version of your project on host[s] and restart\reload webservices
+Patch the current version of your project on host[s] and restart/reload webservices
 Includes project, web configuration, media, and wsgi but does not pip install
 
 Basic Usage:
