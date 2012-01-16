@@ -35,7 +35,7 @@ Setup Ubuntu host[s]. By default this will just setup a baseline host for django
 
 By defining ROLEDEFS in your settings you define packages for those hosts in the ROLE_PACKAGES settings. For example to setup a postgresql server you might define a role ROLEDEFS = {'database':['woven@db1.example.com']}, then set ROLE_PACKAGES = {'database':['postgresql']}, and finally set the firewall to ROLE_UFW_RULES = {'database':['allow tcp/5432']}. Finally postgresql configuration can be set in the project TEMPLATES_DIR woven/etc subdirectory.
 
-Basic Usage::
+Basic Usage:
 
 ``woven-admin.py setupnode [hoststring] [options]``
 
